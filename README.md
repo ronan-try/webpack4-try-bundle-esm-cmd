@@ -21,6 +21,7 @@ module.exports = {
 ![pure_形式的打包](./log_imgs/pure_形式的打包.png)
 
 
+把总结写进去就完事儿了。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。
 
 
 ## small tips
