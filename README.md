@@ -19,3 +19,9 @@ module.exports = {
 ```
 感受一下世界的美好：
 ![pure_形式的打包](./log_imgs/pure_形式的打包.png)
+
+
+
+
+## small tips
+### 1. vue中的alias`@/` 代表`xxx/xx/xxx/src`  是resolve的配置解析策略

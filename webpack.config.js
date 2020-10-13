@@ -94,13 +94,13 @@ module.exports = {
     app: [
       './src/main.js'
     ],
-    other: [
-      './src/other.js'
-    ]
+    // other: [
+    //   './src/other.js'
+    // ]
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: '[name].[hash:4].js',
-    chunkFilename: '[name].[hash:4].js'
+    filename: '[name].[chunkhash:8].js',
+    chunkFilename: '[name].[chunkhash:8].js'
   },
 }
