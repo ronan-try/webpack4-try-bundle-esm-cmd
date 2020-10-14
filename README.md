@@ -52,7 +52,7 @@ Thk for 传送门 [够全的webpack4配置](https://blog.csdn.net/github_3470815
 
 3. 虽然lodash-es `全引入` 和 `全路径引入` 最终结果相同，但是 `全路径引入` 能够提高打包时效：节约打包+shaking
 
-🤙🏻 🤙🏻 🤙🏻 最终推荐 lodash-es全路径引入 -> lodash全路径引入 -> lodash-es -> lodash + lodash-webpack-plugin
+🤙🏻 🤙🏻 🤙🏻 **最终推荐 lodash-es全路径引入 -> lodash全路径引入 -> lodash-es -> lodash + lodash-webpack-plugin**
 
 
 
