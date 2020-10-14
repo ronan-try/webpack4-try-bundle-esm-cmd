@@ -1,7 +1,6 @@
-# 🚀 Welcome to your new awesome project!
+# 🚀 Welcome to webpack4-try-bundle-esm-cmd
 
-## 够全的webpack4配置
-Thk for 传送门 [点这里](https://blog.csdn.net/github_34708151/article/details/103900725)
+**够全的webpack4配置** Thk for 传送门 [点这里](https://blog.csdn.net/github_34708151/article/details/103900725)
 
 
 ## 脑仁疼的细节😱
