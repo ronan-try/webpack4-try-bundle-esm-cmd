@@ -45,7 +45,7 @@ Thk for 传送门 [够全的webpack4配置](https://blog.csdn.net/github_3470815
 ![from_lodash_fullpath_1_chunk.png](./log_imgs/from_lodash-es_fullpath_1.chunk.png)
 
 
-## Targt 撒花 💐 🌸 💮 🌹 🌺 🌻 🌼 🌷 🌱 🌲 🌳 🌴 🌵 🌾 🌿 🍀 🍁 🍂 🍃
+## Targt 撒花 🌹 🌺 🌻  🌷 🌱 🌲 🌳 🌴 🌵 🌾 🌿 🍀 🍁 🍂 🍃
 1. 如果使用`全引入`方式，推荐lodash-es > lodash，虽然lodash、lodash-es两者都会把全部文件进行bundle，但是lodash-es可以进行shaking
 
 2. 如果使用`全路径引入`方式，推荐lodash-es > lodash，区别不大。因为lodash源码层面已经将函数拆分的很细，通过组装的形式来完成
@@ -85,4 +85,4 @@ module.exports = {
 
 
 ### 完结 撒花
-💐 🌸 💮 🌹 🌺 🌻 🌼 🌷 🌱 🌲 🌳 🌴 🌵 🌾 🌿 🍀 🍁 🍂 🍃 
+🌹 🌺 🌻  🌷 🌱 🌲 🌳 🌴 🌵 🌾 🌿 🍀 🍁 🍂 🍃
