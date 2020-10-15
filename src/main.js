@@ -18,3 +18,7 @@
  */
 console.log(import(/* webpackChunkName: "async_1" */ './async/async_1'))
 console.log(import(/* webpackChunkName: "async_2" */ './async/async_2'))
+
+
+
+console.log('main.js', 'a');

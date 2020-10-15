@@ -54,7 +54,7 @@ module.exports = {
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: '[name].[hash:8].js',
-    chunkFilename: '[name].[hash:8].js'
+    filename: '[name].[chunkhash:8].js',
+    chunkFilename: '[name].[chunkhash:8].js'
   },
 }
