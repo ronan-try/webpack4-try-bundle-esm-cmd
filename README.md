@@ -2,11 +2,26 @@
 
 `lodash` 和 `lodash-es`是一个很好的实验对象。
 
+代码：`./test_lodash.js`
+```js
+import { debounce } from 'lodash'
+// import debounce from 'lodash/debounce'
+// import { debounce } from 'lodash-es'
+// import debounce from 'lodash-es/debounce'
+
+export const test_debounce = () => {
+    console.log(debounce, 'test_debounce', '123')
+}
+
+export const test001 = () => console.log('test001')
+export const test002 = () => console.log('test002')
+export const test003 = () => console.log('test003')
+```
+
 
 ## 🙄 Target 
 1. 分析webpack4打包文件代码，查看cmd、esm打包区别。
-2. lodash和lodash-es正好作为实验对象。
-3. lodash最佳使用推荐，以及推荐理由
+2. lodash和lodash-es正好作为实验对象；lodash最佳使用推荐，以及推荐理由
 
 ## 🤔 Try 几个场景
 ### - 😘 Try000 cmd: 全引入lodash，`import { debounce } from 'lodash'`
@@ -53,7 +68,7 @@
 
 2. esm: webapck4对esm库 进行ES6静态结构分析，后期可tree shaking。
 
-### 2. &3. lodash最佳使用推荐，以及推荐理由
+### 2. lodash最佳使用推荐，以及推荐理由
 1. 如果使用`全引入`方式，推荐lodash-es > lodash，虽然lodash、lodash-es两者都会把全部文件进行bundle，但是lodash-es可以进行shaking
 
 2. 如果使用`全路径引入`方式，推荐lodash vs lodash-es，区别不大。因为[lodash-npm源码](https://github.com/lodash/lodash/blob/4.17.20-npm/cloneDeep.js)层面已经将函数拆分的很细，并且通过`全路径引入`组装完成
