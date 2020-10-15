@@ -98,3 +98,5 @@ module.exports = {
 
 ### 完结 撒花
 🌹 🌺 🌻  🌷 🌱 🌲 🌳 🌴 🌵 🌾 🌿 🍀 🍁 🍂 🍃
+
+![relations.xmind](./docs/relations.png)
