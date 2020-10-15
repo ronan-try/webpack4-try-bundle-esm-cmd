@@ -56,7 +56,7 @@
 ### 2. &3. lodash最佳使用推荐，以及推荐理由
 1. 如果使用`全引入`方式，推荐lodash-es > lodash，虽然lodash、lodash-es两者都会把全部文件进行bundle，但是lodash-es可以进行shaking
 
-2. 如果使用`全路径引入`方式，推荐lodash vs lodash-es，区别不大。因为lodash源码层面已经将函数拆分的很细，并且通过`全路径引入`组装完成
+2. 如果使用`全路径引入`方式，推荐lodash vs lodash-es，区别不大。因为[lodash-npm源码](https://github.com/lodash/lodash/blob/4.17.20-npm/cloneDeep.js)层面已经将函数拆分的很细，并且通过`全路径引入`组装完成
 
 3. 虽然lodash-es `全引入` 和 `全路径引入` 最终结果相同，但是 `全路径引入` 能够提高打包时效：节约打包+shaking
 
