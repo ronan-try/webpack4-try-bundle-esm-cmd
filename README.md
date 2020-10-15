@@ -2,8 +2,6 @@
 
 `lodash` 和 `lodash-es`是一个很好的实验对象。
 
-Thk for 传送门 [够全的webpack4配置](https://blog.csdn.net/github_34708151/article/details/103900725)
-
 
 ## 🙄 Targe 
 1. 分析webpack4打包文件代码，查看cmd、esm打包区别。
@@ -11,7 +9,7 @@ Thk for 传送门 [够全的webpack4配置](https://blog.csdn.net/github_3470815
 3. lodash最佳使用推荐，以及推荐理由
 
 ## 🤔 Try 几个场景
-### - Try000 cmd: 全引入lodash，`import { debounce } from 'lodash'`
+### - 😘 Try000 cmd: 全引入lodash，`import { debounce } from 'lodash'`
 1. app.js 中会引入的是`整个lodash文件`
 2. chunk.js 中近`2w`行的lodash代码，且没有`ununsed harmony`标识，意味着不会被shaking掉
 
@@ -19,7 +17,7 @@ Thk for 传送门 [够全的webpack4配置](https://blog.csdn.net/github_3470815
 ![from_lodash_allin_1_chunk.png](./log_imgs/from_lodash_allin_1_chunk.png)
 
 
-### - Tyr001 cmd: 全路径引入lodash某方法，`import debounce from 'lodash/debounce'`
+### - 😘 Tyr001 cmd: 全路径引入lodash某方法，`import debounce from 'lodash/debounce'`
 1. app.js 中会引入的是`lodash/debounce`文件。对比Try000，仅引入了相关代码
 2. chunk.js 中近`400`行的lodash代码，且没有`ununsed harmony`标识，意味着不会被shaking掉
 3. lodash的打包代码量明显减小：`2w->400` 🤙🏻🤙🏻🤙🏻
@@ -28,7 +26,7 @@ Thk for 传送门 [够全的webpack4配置](https://blog.csdn.net/github_3470815
 ![from_lodash_fullpath_1_chunk.png](./log_imgs/from_lodash_fullpath_1_chunk.png)
 
 
-### - Try010 esm: 全引入lodash，`import { debounce } from 'lodash-es'`
+### - 😘 Try010 esm: 全引入lodash，`import { debounce } from 'lodash-es'`
 1. app.js 中会引入的是`整个lodash-es文件`
 2. chunk.js 中近`2w`行的lodash代码，且有`ununsed harmony`标识，意味着shaking
 
@@ -36,7 +34,7 @@ Thk for 传送门 [够全的webpack4配置](https://blog.csdn.net/github_3470815
 ![from_lodash-es_1_chunk.png](./log_imgs/from_lodash-es_1_chunk.png)
 
 
-### - Tyr011 esm: 全路径引入lodash某方法，`import debounce from 'lodash-es/debounce'`
+### - 😘 Tyr011 esm: 全路径引入lodash某方法，`import debounce from 'lodash-es/debounce'`
 1. app.js 中会引入的是`lodash-es/debounce`文件。对比Try010，仅引入了相关代码
 2. chunk.js 中近`500`行的lodash代码，且没有`ununsed harmony`标识，意味着不会被shaking掉，且 没有垃圾冗余代码
 3. lodash的打包代码量明显减小：`2w->500` 🤙🏻🤙🏻🤙🏻
@@ -66,10 +64,12 @@ Thk for 传送门 [够全的webpack4配置](https://blog.csdn.net/github_3470815
 
 
 
-## small tips
+## 😘 small tips
 ### 1. vue中的alias`@/` 代表`xxx/xx/xxx/src`  是resolve的配置解析策略
 
 ### 2. webapck4 init生成的配置方案中，开发模式下的打包默认是`eval`，打包文件可读性太难了
+Thk for 传送门 [够全的webpack4配置](https://blog.csdn.net/github_34708151/article/details/103900725)
+
 default 配置，来感受一下：
 ![eval_形式的打包](./log_imgs/eval_形式的打包.png)
 
