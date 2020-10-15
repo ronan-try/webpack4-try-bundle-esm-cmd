@@ -1,6 +1,6 @@
 # 🚀 Welcome to webpack4-try-bundle-esm-cmd
 
-`lodash` 和 `lodash-es`是一个很好的实验对象。
+`lodash(npm)` 和 `lodash-es`是一个很好的实验对象。
 
 代码：`./test_lodash.js`
 ```js
@@ -21,7 +21,7 @@ export const test003 = () => console.log('test003')
 
 ## 🙄 Target 
 1. 分析webpack4打包文件代码，查看cmd、esm打包区别。
-2. lodash和lodash-es正好作为实验对象；lodash最佳使用推荐，以及推荐理由
+2. lodash和lodash-es正好作为实验对象；lodash最佳使用推荐，以及推荐理由(通过bundle代码角度)
 
 ## 🤔 Try 几个场景
 ### - 😘 Try000 cmd: 全引入lodash，`import { debounce } from 'lodash'`
@@ -73,14 +73,14 @@ export const test003 = () => console.log('test003')
 
 2. 如果使用`全路径引入`方式，推荐lodash vs lodash-es，区别不大。因为[lodash-npm源码](https://github.com/lodash/lodash/blob/4.17.20-npm/cloneDeep.js)层面已经将函数拆分的很细，并且通过`全路径引入`组装完成
 
-3. 虽然lodash-es `全引入` 和 `全路径引入` 最终结果相同，但是 `全路径引入` 能够提高打包时效：节约打包+shaking
+3. 虽然lodash-es `全引入` 和 `全路径引入` 最终结果相同，但是 `全路径引入` 能够提升打包时效：节约打包+shaking
 
 🤙🏻 🤙🏻 🤙🏻 **最终推荐 全路径引入某Fun(lodash vs lodash-es) --> 全引入(lodash-es > lodash + lodash-webpack-plugin)**
 
 
 
 ## 😘 small tips
-### 1. vue中的alias`@/` 代表`xxx/xx/xxx/src`  是resolve的配置解析策略
+### 1. vue中的alias `@/` 代表`xxx/xx/xxx/src`  是resolve的配置解析策略
 
 ### 2. webapck4 init生成的配置方案中，开发模式下的打包默认是`eval`，打包文件可读性太难了
 Thk for 传送门 [够全的webpack4配置](https://blog.csdn.net/github_34708151/article/details/103900725)
