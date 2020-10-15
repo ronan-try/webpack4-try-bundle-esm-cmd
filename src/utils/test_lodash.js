@@ -1,5 +1,5 @@
-import { debounce } from 'lodash'
-// import debounce from 'lodash/debounce'
+// import { debounce } from 'lodash'
+import debounce from 'lodash/debounce'
 // import { debounce } from 'lodash-es'
 // import debounce from 'lodash-es/debounce'
 

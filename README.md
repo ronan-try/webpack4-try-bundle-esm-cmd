@@ -35,7 +35,7 @@ export const test003 = () => console.log('test003')
 ### - 😘 Tyr001 cmd: 全路径引入lodash某方法，`import debounce from 'lodash/debounce'`
 1. app.js 中会引入的是`lodash/debounce`文件。对比Try000，仅引入了相关代码
 2. chunk.js 中近`400`行的lodash代码，且没有`ununsed harmony`标识，意味着不会被shaking掉
-3. lodash的打包代码量明显减小：`2w->400` 🤙🏻🤙🏻🤙🏻
+3. lodash的打包代码量明显减小：`2w->400` 🤙🏻 🤙🏻 🤙🏻
 
 ![from_lodash_fullpath_0_app.png](./log_imgs/from_lodash_fullpath_0_app.png)
 ![from_lodash_fullpath_1_chunk.png](./log_imgs/from_lodash_fullpath_1_chunk.png)
