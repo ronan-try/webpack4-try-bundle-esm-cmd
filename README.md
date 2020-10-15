@@ -83,7 +83,7 @@ module.exports = {
 
 
 
-## 👀👂 也发现了开源项目中lodash的使用方式，感谢jinru
+## 👀 👂 对上次使用lodash全路径引入某函数的方法稍微有点迟疑，也发现了开源项目中lodash的使用方式，感谢jinru
 ### 😘 ant-design-vue-1.x
 ![ant-design-vue-1.x](./lodash_imgs/ant-design-vue-1.x.png)
 
@@ -92,6 +92,8 @@ module.exports = {
 
 ### 😘 ant-design-react
 ![ant-design-react](./lodash_imgs/ant-design-react.png)
+
+🤔 🤔 既然已经使用了lodash-es，为啥还在全路径的引入呢？于是有了这次实验。
 
 
 ### 完结 撒花
