@@ -45,7 +45,17 @@ Thk for 传送门 [够全的webpack4配置](https://blog.csdn.net/github_3470815
 ![from_lodash_fullpath_1_chunk.png](./log_imgs/from_lodash-es_fullpath_1.chunk.png)
 
 
-## Targt 撒花 🌹 🌺 🌻  🌷 🌱 🌲 🌳 🌴 🌵 🌾 🌿 🍀 🍁 🍂 🍃
+## 🙄 Targt 撒花 🌹 🌺 🌻  🌷 🌱 🌲 🌳 🌴 🌵 🌾 🌿 🍀 🍁 🍂 🍃
+### 1. 分析webpack4打包文件代码，查看cmd、esm打包区别。
+1. cmd：webpack4对cmd库 直接提供一个命名空间，不对内部代码进行分析。
+
+- [不能像Parcel那样对cmd进行tree shaking](https://baijiahao.baidu.com/s?id=1665363889032577362&wfr=spider&for=pc)
+
+- [webpack5新增功能之一就是对cmd进行TreeShaing](https://webpack.docschina.org/blog/2020-10-10-webpack-5-release/)
+
+2. esm: webapck4对esm库 进行ES6静态结构分析，后期可tree shaking。
+
+### 2. &3. lodash最佳使用推荐，以及推荐理由
 1. 如果使用`全引入`方式，推荐lodash-es > lodash，虽然lodash、lodash-es两者都会把全部文件进行bundle，但是lodash-es可以进行shaking
 
 2. 如果使用`全路径引入`方式，推荐lodash-es > lodash，区别不大。因为lodash源码层面已经将函数拆分的很细，通过组装的形式来完成
